@@ -230,6 +230,7 @@ const Home: NextPage = () => {
       axios(config).then(async function (response: any) {
         const code: any = '0x' + response.data.bytecode;
         const incrementer: any = new web3.eth.Contract(response.data.abi);
+        console.log(response.data.abi)
         const publicSaleStart: any = moment.utc(publicMintStartDate).format(
           "YYYY-MM-DDTHH:mm:00+00:00"
         )

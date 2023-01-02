@@ -17,7 +17,7 @@ function CurrencyProvider({children}:any) {
     const handleCurrencyChange = (selectedOption:any, next:any) => {
       console.log(selectedOption)
       setCurrency(selectedOption)
-      let chainNo = selectedOption === "eth" ? 5 : selectedOption === "bsc" ? 97 : selectedOption === "matic" ? 80001 : 5 ;
+      let chainNo = selectedOption === "eth" ? 31337 : selectedOption === "bsc" ? 97 : selectedOption === "matic" ? 80001 : 31337 ;
       next(chainNo);
     }
 

@@ -60,7 +60,7 @@ const Header = ({ }) => {
   const connectMetaMask = async () => {
     setWallet(WALLETS[0].icon);
     const { ethereum } = window;
-    let chainNo = currency === "eth" ? 5 : currency === "bsc" ? 97 : currency === "matic" ? 80001 : 5;
+    let chainNo = currency === "eth" ? 31337 : currency === "bsc" ? 97 : currency === "matic" ? 80001 : 31337;
     let provider;
     if (!ethereum?.providers) {
       setIsOpenConnectModal(false);
@@ -172,7 +172,7 @@ const Header = ({ }) => {
             node: 'goerli',
             rpcUrl: 'https://goerli.infura.io/v3/62d7de656d544930adb16c024a8694bf',
             networkType: "GOERLI",
-            chainId: 5,
+            chainId: 31337,
             blockexplorer: "https://goerli.etherscan.io",
             MetaMaskConnector: CurrencyValues.METAMASKETH,
             CoinBaseConnector: CurrencyValues.COINBASEETH,

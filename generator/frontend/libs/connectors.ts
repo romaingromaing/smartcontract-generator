@@ -29,7 +29,6 @@ export const WALLETCONNECTBSC = new WalletConnectConnector({
 //   qrcode: true,
 // });
 
-
 // export const bscDetails = {
 //   supportedChainIds: [97],
 //   rpc: "https://mainnet.infura.io/v3/62d7de656d544930adb16c024a8694bf",  
@@ -44,7 +43,7 @@ export const bscDetails = {
 //___________________________________ETH_______________________________
 
 export const METAMASKETH = new InjectedConnector({
-  supportedChainIds: [5,97,80001],
+  supportedChainIds: [5,97,80001, 31337],
 });
 
 export const COINBASEETH = new WalletLinkConnector({
